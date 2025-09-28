@@ -1,0 +1,7 @@
+# 실행 파일 무시
+*.exe
+data.txt
+fibo_memoization.cpp
+js-1181.cpp
+temp.cpp
+test.cpp
