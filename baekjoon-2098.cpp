@@ -12,7 +12,7 @@ int dp[16][1<<16];
 int tsp(int u, int mask) {
 	if(mask == (1<<N) - 1) { // 모든 도시 방문 완료 
 		if(W[u][0] == 0) return INF;
-		else return W[u][0];
+		else return W[u][0]; 
 	}
 	
 	int &ret = dp[u][mask]; // 이렇게 하면 더 간단함
