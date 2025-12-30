@@ -23,7 +23,7 @@ int main(void) {
 	cin >> N;
 	
 	vector<vector<char>> input(N, vector<char>(N));
-	vector<vector<bool>> vis(N, vector<bool>(N, false));
+	
 	
 	for(int i=0; i<N; i++) {
 		for(int j=0; j<N; j++) {
@@ -34,7 +34,8 @@ int main(void) {
 	int dx[4] = {1, 0, -1, 0};
 	int dy[4] = {0, 1, 0, -1};
 	
-	for(int colorBlind=0; colorBlind<2; colorBlind++) {		
+	for(int colorBlind=0; colorBlind<2; colorBlind++) {	
+		vector<vector<bool>> vis(N, vector<bool>(N, false));	
 		int ans = 0;
 		for(int i=0; i<N; i++) {
 			for(int j=0; j<N; j++) {
